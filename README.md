@@ -1,6 +1,6 @@
 # ESP32_Learning-BC-Aug2022
 
-Recent Project:
+## Recent Project:
 
 [Project7 E-paper weather forecast system](./Project_7_Epaper_ProfessionalWeather):
 
@@ -8,7 +8,7 @@ Recent Project:
 ![8db6941d435a9823386a1421ea02125](https://github.com/yuantianle/ESP32_Learning-BC-Aug2022/assets/61530469/592b1a51-3208-41d9-8596-c13436bec80e)
 
 
-C/C++ based mini projects by using Arduino 1.8.19
+## ESP32 device details
 
 ![image](https://user-images.githubusercontent.com/61530469/185292614-601dfb8a-d471-4a9a-86b8-c1b8a018cb0c.png)
 ![image](https://user-images.githubusercontent.com/61530469/185292708-c6a9f03c-e1fd-48a6-b73f-17099fe7bf5f.png)
