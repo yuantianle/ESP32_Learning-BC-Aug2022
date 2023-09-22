@@ -19,6 +19,11 @@ const char* weatherApiUrl = "https://api.openweathermap.org/data/2.5/weather?q=P
 const long utcOffsetInSeconds = -25200; // Adjust this value to match your time zone offset
 WiFiUDP ntpUDP;
 NTPClient timeClient(ntpUDP, "pool.ntp.org", utcOffsetInSeconds);
+
+// Border constants
+const int BORDER_THICKNESS = 10; // Adjust the border thickness as needed
+const uint16_t BORDER_COLOR = GxEPD_BLACK;
+
 const unsigned char PROGMEM myImage[] = {	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
@@ -199,6 +204,7 @@ const unsigned char PROGMEM myImage[] = {	0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x
 	0x3f, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 
 	0xf0, 0x00};
 
+
 void setup()
 {
   Serial.begin(115200);
@@ -217,6 +223,7 @@ void setup()
   display.init(115200);
   display.fillScreen(GxEPD_WHITE);
   display.setTextColor(GxEPD_BLACK);
+
 }
 
 void loop()
@@ -263,8 +270,11 @@ void loop()
     display.setCursor(10, 150);
     display.println("Humidity: " + String(humidity) + "%");
 
-     // Draw the image at the bottom
+    // Draw the image at the bottom
     display.drawBitmap(230, 140, myImage, 150, 150, GxEPD_BLACK);
+
+    // Draw the decorative border
+    display.drawRect(0, 0, display.width(), display.height(), BORDER_COLOR);
 
     display.update();
   } else {
@@ -273,5 +283,5 @@ void loop()
 
   http.end();
 
-  delay(18000); // Update weather data every 3 seconds
+  delay(10000); // Update weather data every 10 seconds
 }
