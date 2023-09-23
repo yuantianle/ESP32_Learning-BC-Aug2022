@@ -102,9 +102,11 @@ float humidity_readings[max_readings]    = {0};
 float rain_readings[max_readings]        = {0};
 float snow_readings[max_readings]        = {0};
 
-long SleepDuration = 1; // Sleep time in minutes, aligned to the nearest minute boundary, so if 30 will always update at 00 or 30 past the hour
+long SleepDuration = 5; // Sleep time in minutes, aligned to the nearest minute boundary, so if 30 will always update at 00 or 30 past the hour
 int  WakeupTime    = 6;  // Don't wakeup until after 07:00 to save battery power
 int  SleepTime     = 24; // Sleep after (23+1) 00:00 to save battery power
+int NightshiftTime = 18;
+int DayshiftTime = 6;
 
 //#########################################################################################
 void setup() {
