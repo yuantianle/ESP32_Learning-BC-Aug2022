@@ -112,10 +112,11 @@ uint16_t myWhiteColor = GxEPD_WHITE;
 
 //#########################################################################################
 void setup() {
+      //delay(10000); // Wait for 1 second (1000 milliseconds)
   StartTime = millis();
   Serial.begin(115200);
   if (StartWiFi() == WL_CONNECTED && SetupTime() == true) {
-    if (CurrentHour >= WakeupTime && CurrentHour <= SleepTime ) {
+    if (CurrentHour >= WakeupTime && CurrentHour <= SleepTime ) { 
       DecideColor();
       InitialiseDisplay(); // Give screen time to initialise by getting weather data!
       byte Attempts = 1;
@@ -137,6 +138,7 @@ void setup() {
 }
 //#########################################################################################
 void loop() { // this will never run!
+
 }
 //#########################################################################################
 void BeginSleep() {
