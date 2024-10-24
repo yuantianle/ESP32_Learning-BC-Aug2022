@@ -4,6 +4,10 @@
 
 [Project7 E-paper weather forecast system](./Project_7_Epaper_ProfessionalWeather):
 
+![](https://github.com/yuantianle/ESP32_Learning-BC-Aug2022/blob/main/Project_7_Epaper_ProfessionalWeather/Project_7_5_Lighting_Component/%E5%9B%BE%E7%89%87_20231005232143.jpg?raw=true)
+![](https://github.com/yuantianle/ESP32_Learning-BC-Aug2022/blob/main/Project_7_Epaper_ProfessionalWeather/Project_7_5_Lighting_Component/%E5%9B%BE%E7%89%87_20231005232117.jpg?raw=true)
+![](https://github.com/yuantianle/ESP32_Learning-BC-Aug2022/blob/main/Project_7_Epaper_ProfessionalWeather/Project_7_4_Lego_Compression/%E5%9B%BE%E7%89%87_20231005232036.jpg?raw=true)
+![](https://github.com/yuantianle/ESP32_Learning-BC-Aug2022/blob/main/Project_7_Epaper_ProfessionalWeather/Project_7_4_Lego_Compression/%E5%9B%BE%E7%89%87_20231005232039.jpg?raw=true)
 ![fa85d47b33537e3e93b52d5fd5ea311](https://github.com/yuantianle/ESP32_Learning-BC-Aug2022/assets/61530469/c0639db4-fb45-4558-86dd-929992cacf69)
 ![8db6941d435a9823386a1421ea02125](https://github.com/yuantianle/ESP32_Learning-BC-Aug2022/assets/61530469/592b1a51-3208-41d9-8596-c13436bec80e)
 
