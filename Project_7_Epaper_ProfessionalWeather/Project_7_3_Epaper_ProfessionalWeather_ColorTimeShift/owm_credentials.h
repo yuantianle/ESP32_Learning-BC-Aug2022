@@ -1,6 +1,6 @@
 // Change to your WiFi credentials
-const char* ssid     = "hello-kona";
-const char* password = "Montucky2023";
+const char* ssid     = "FlyMonkeyKing";
+const char* password = "thisisapassword";
 
 // Use your own API key by signing up for a free developer acd:\ESP32_Learning-BC-Aug2022\Project_7_Epaper_ProfessionalWeather\platformio.inicount at https://openweathermap.org/
 String apikey       = "32ba5f5223848813181ea9825fb6b823";                      // See: https://openweathermap.org/
